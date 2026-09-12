@@ -9,7 +9,7 @@
 <title>Шашлычный мир Самара</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Commissioner:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Podkova:wght@600;700&family=Yanone+Kaffeesatz:wght@500;700&family=Commissioner:wght@300;400;500;600&display=swap">
 
 <style>
 /* Цвета с их баннера на Стара-Загоре: угольная панель, золотые буквы, белое «Кафе».
@@ -31,7 +31,8 @@
   --line:rgba(245,242,234,.14);
   --line-soft:rgba(245,242,234,.07);
 
-  --f-display:'Russo One','Arial Black',system-ui,sans-serif;
+  --f-display:'Yanone Kaffeesatz','Arial Narrow',system-ui,sans-serif;
+  --f-mark:'Podkova',Rockwell,Georgia,serif;
   --f-body:'Commissioner','Helvetica Neue',system-ui,sans-serif;
 
   --wrap:1240px;
@@ -50,13 +51,13 @@ img{display:block;max-width:100%}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
-h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.08;margin:0;text-transform:uppercase;text-wrap:balance}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.08;margin:0;text-transform:uppercase;text-wrap:balance}
 p{margin:0}
 
 /* ── Шапка ── */
 .top{position:sticky;top:0;z-index:40;background:rgba(20,20,24,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
 .top-in{display:flex;align-items:center;gap:1rem;height:58px}
-.logo{font-family:var(--f-display);font-size:17px;text-transform:uppercase;text-decoration:none;letter-spacing:.01em}
+.logo{font-family:var(--f-mark);font-weight:700;font-size:16px;text-transform:uppercase;text-decoration:none;letter-spacing:.01em}
 .logo .a{color:var(--gold)}
 .logo .b{color:var(--bone)}
 .demo-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);border:1px solid var(--line);border-radius:999px;padding:.25em .65em}
@@ -69,7 +70,7 @@ p{margin:0}
 .band{position:relative;border-bottom:3px solid var(--gold);background:var(--coal-2)}
 .band-in{position:relative;display:grid;grid-template-columns:1.25fr 1fr;min-height:230px}
 .band-txt{padding:clamp(1.6rem,4vw,2.6rem) var(--pad);display:flex;flex-direction:column;justify-content:center;gap:.7rem;max-width:760px;margin-left:auto;width:100%}
-.band-txt h1{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:.01em}
+.band-txt h1{font-family:var(--f-mark);font-weight:700;font-size:clamp(2.1rem,5vw,3.5rem);letter-spacing:-.005em;line-height:1.08}
 .band-txt h1 .a{color:var(--gold);display:block}
 .band-txt h1 .b{color:var(--bone)}
 .band-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ash)}
